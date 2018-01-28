@@ -1,0 +1,20 @@
+<!-- <ion-nav [root]="rootPage"></ion-nav> -->
+<!-- <div class="drop-container" ngFileDrop [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" [ngClass]="{ 'is-drop-over': dragOver }">
+    <div class="drop-active-highligter"></div>
+    <h1>Drag &amp; Drop</h1>
+    <ion-icon name="document"></ion-icon>
+</div> -->
+<!-- <div class="option-seperator">(or)</div> -->
+<h1>This is a file upload program in NodeJS and Angular</h1>
+<label class="upload-button-wrapper">
+  <input type="file" #fileInput ngFileSelect [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" multiple>
+  <div ion-button color="dark">Choose file(s)</div>
+</label>
+<div class="file-stats">{{fileInput.files.length}} File(s) Selected</div>
+<!-- <div margin-top text-center>
+  <button ion-button type="button" large class="start-upload-btn" (click)="startUpload()">
+    Start Upload
+  </button>
+</div> -->
+<!-- <button ion-button round outline style="float:right">Upload File in mobile</button> -->
+

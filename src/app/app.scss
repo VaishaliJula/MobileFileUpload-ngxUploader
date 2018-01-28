@@ -1,0 +1,76 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.app-root {
+  background-color: #F7F6E7;
+}
+.drop-container {
+  min-height: 200px;
+  background-color: #666;
+  color: #aaa;
+  position: relative;
+  text-align: center;
+
+  &.is-drop-over .drop-active-highligter {
+    $offset: 1em;
+
+    position: absolute;
+    top: $offset;
+    bottom: $offset;
+    left: $offset;
+    right: $offset;
+    pointer-events: none;
+    border: 4px dashed #868686;
+    border-radius: 4px;
+  }
+
+  h1 {
+    margin-top: 0;
+    padding: 22px;
+    
+  }
+
+  ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4em;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.option-seperator {
+  text-align: center;
+  margin: 18px;
+}
+
+.upload-button-wrapper {
+  text-align: center;
+  display: block;
+
+  input[type='file'] {
+    display: none;
+  }
+}
+
+.file-stats {
+  text-align: center;
+  color: #333;
+  font-size: 0.9em;
+}
+span.button-inner {
+  color: brown;
+}
